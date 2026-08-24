@@ -11,10 +11,12 @@ function App() {
   const [page, setPage] = useState('dashboard')
 
   // Login successful
-  const handleLogin = () => {
-    setLoggedIn(true)
-    setPage('dashboard')
-  }
+const handleLogin = () => {
+  setTimeout(() => {
+    setLoggedIn(true);
+    setPage('dashboard');
+  }, 2500);
+};
 
   // Menu click
   const handleMenuClick = (menu) => {
